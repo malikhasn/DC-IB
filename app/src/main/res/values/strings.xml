@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Ewatch MIS</string>
+    <string name="et_hint_username">Username</string>
+    <string name="btn_login">LOGIN</string>
+    <!--<string name="APP_URL">http://ems.appinsnap.com</string>-->
+    <string name="APP_URL">http://electionmis.com/IB/api</string>
+    <string name="txtview_forgotpassword">Forgot Password</string>
+    <string name="et_hint_password">Password</string>
+    <string name="txt_welcome">Welcome to</string>
+    <string name="txt_ct">CT</string>
+    <string name="txt_ci">CI</string>
+    <string name="txt_political">Political</string>
+    <string name="txt_religious">Religious</string>
+    <string name="txt_security_fn">Security (Foreign Nationals)</string>
+    <string name="txt_threat_alert">Threat Alert</string>
+    <string name="txt_crime">Crime</string>
+    <string name="txt_misc_alert">Misc</string>
+    <string name="btn_text_logout">LOGOUT</string>
+    <string name="subject">Subject:</string>
+    <string name="type">Type:</string>
+    <string name="capture_image">CAPTURE IMAGE</string>
+    <string name="capture_video">CATPURE VIDEO</string>
+    <string name="capture_voice">CAPTURE VOICE</string>
+    <string name="btn_text_save">SAVE</string>
+    <string name="numbers">Numbers:</string>
+    <string name="brief_facts">Brief Facts:</string>
+    <string name="detail">Violation Detail</string>
+    <string name="btn_text_ok">OK</string>
+    <string name="text_login_o">Ewatch By Intelligence Bureau</string>
+    <string name="text_login_t">Rawalpindi</string>
+    <string name="con_typ">Constituency Type</string>
+    <string name="txt_footer">Ewatch By Intelligence Bureau \n Rawalpindi</string>
+</resources>

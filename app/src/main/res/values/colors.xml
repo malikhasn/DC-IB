@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08384C</color>
+    <color name="colorPrimaryNew">#08384C</color>
+    <color name="colorPrimaryDark">#08384C</color>
+    <color name="colorAccent">#08384C</color>
+    <color name="bgcolor">#efefef</color>
+    <color name="white">#FEFDFD</color>
+    <color name="forgot_pwd">#004c65</color>
+    <color name="color_report">#28bb00</color>
+    <color name="color_report_drawer">#51b386</color>
+    <color name="color_report_new">#bfa264</color>
+    <color name="color_category">#01411d</color>
+    <color name="colorBTestMenu">#BABABA</color>
+    <color name="colorlogin">#13A89E</color>
+    <color name="color_category_form">#535353</color>
+    <color name="color_drawer_new">#0E4A66</color>
+    <color name="color_button">#315257</color>
+    <color name="color_white_view">#FFFFFF</color>
+    <color name="backgroung_color">#26415F</color>
+
+</resources>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appinsnap.ewatchIBfinal.CategoryDataActivity">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_height="fill_parent" >
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.appinsnap.ewatchIBfinal.CategoryDataActivity">
+
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/topToolbar"
+                android:background="@color/colorPrimary"
+                android:layout_height="50dp">
+
+
+                <ImageView
+                    android:id="@+id/imgview_iblog"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ib_logo_new"
+                    android:layout_gravity="center_horizontal|end"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/color_report" />
+
+
+                <ImageView
+                    android:id="@+id/imgview_backbtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/image_back_btn"
+                    android:layout_gravity="center_horizontal|start"
+                    android:textColor="@color/color_report"/>
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_relativelayout"
+                android:layout_below="@+id/topToolbar"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_political"
+                    android:id="@+id/category_txt"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/color_category"
+                    android:paddingLeft="10dp"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/divider"
+                android:layout_below="@+id/txt_relativelayout"
+                android:background="@color/color_report"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/form_relativelayout"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/divider">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_type_name"
+                    android:text="@string/type"
+                    android:textColor="@color/color_category_form"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_type"
+                    android:layout_below="@+id/tv_type_name"
+                    android:text="urgent"
+                    android:textSize="17dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_business_account_info_name"
+                    android:text="@string/subject"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/tv_type"
+                    android:textColor="@color/color_category_form"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_subject"
+                    android:layout_below="@+id/tv_business_account_info_name"
+                    android:text="Imran Kazmi"
+                    android:textSize="17dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_numbers"
+                    android:text="@string/numbers"
+                    android:layout_marginTop="17dp"
+                    android:textColor="@color/color_category_form"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tv_subject"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_numbers_display"
+                    android:text="61101-2028549-5\n+923137562147\nRIO 7772"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/tv_numbers"
+                    android:textSize="15dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_brieffacts"
+                    android:text="@string/brief_facts"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/color_category_form"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/tv_numbers_display"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_brieffacts_display"
+                    android:text="House # 298,Street No 68 Muhammadi Muhalla\nSadabad Rawalpindi"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/tv_brieffacts"
+                    android:textSize="17dp"/>
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view_divider"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/form_relativelayout"
+                android:background="@color/color_report"></View>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imageview_linearlayout"
+                android:layout_below="@+id/view_divider"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/vid_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/audio_relativelayout"
+                android:visibility="invisible"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageview_linearlayout"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imgview_play_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/play_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|start"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/color_report" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="00:00:00:00"/>
+
+                <ImageView
+                    android:id="@+id/imgview_speaker_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/imgview_play_icon"
+                    android:layout_gravity="center_horizontal|end"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/speaker_icon"
+                    android:textColor="@color/color_report" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_next_relativelayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/audio_relativelayout"
+
+                >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/btn_cancel"
+                    android:layout_weight=".5"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/cancel_button"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/btn_ok"
+                    android:text=""
+                    android:layout_weight=".5"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/submit_button"/>
+
+</LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginLeft="20dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/js_logo" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+
+                    android:src="@drawable/app_in_snap_logo" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appinsnap.ewatchIBfinal">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+    <!--<uses-feature android:name="android.hardware.camera2" />-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:exported="true">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".AlecMainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" > </activity>
+        <activity android:name=".AlecSubmitActivity"
+        android:exported="true"
+        android:screenOrientation="portrait" > </activity>
+        <activity android:name=".AcResolveActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" > </activity>
+
+
+
+        <activity android:name=".CategoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".CategoryDataActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" ></activity>
+
+        <activity android:name=".MessagesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".RecorderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".MessageDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" ></activity>
+      <activity android:name=".SubmitPendingActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" ></activity>
+        <activity android:name=".DcMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"
+            android:screenOrientation="portrait" ></activity>
+        <service android:name="com.alexbbb.uploadservice.UploadService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.alexbbb.uploadservice.action.upload"></action>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

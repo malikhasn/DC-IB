@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroung_color"
+    android:orientation="vertical"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:background="@color/backgroung_color"
+        android:id="@+id/text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="subject"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.6"
+            android:singleLine="true"
+            android:textColor="@color/color_white_view" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:textSize="13dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/item_info"
+            android:layout_weight="0.7"
+            android:text="Marshmallow is a software "
+            android:textColor="@color/color_white_view" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/text"
+        android:background="#08384C">
+
+    </View>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(01-05-18)"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/name"
+        android:textColor="@color/color_report_drawer"
+        tools:ignore="NotSibling" />
+
+    <ImageView
+        android:id="@+id/item_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/delete_icon"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/version_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="API: "
+            android:visibility="invisible"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/version_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23"
+            android:visibility="invisible"
+
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/topToolbar"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/imgview_iblog"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal|end"
+            android:paddingRight="5dp"
+            android:textColor="@color/color_report" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="MESSAGES"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_report_new"
+            />
+        <ImageView
+            android:id="@+id/imgview_backbtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_back_btn"
+            android:layout_gravity="center_horizontal|start"
+            android:textColor="@color/color_report"/>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/form_relativelayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/topToolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_type_name"
+            android:text="@string/type"
+            android:textColor="@color/color_category_form"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reletivelayout_top"
+            >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_business_account_info_name"
+            android:text="Title:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_report_drawer"
+            android:textSize="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_business_account_info_name"
+            android:layout_marginLeft="10dp"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:layout_marginTop="13dp"
+            >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_subject"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/tv_business_account_info_name"
+            android:text="Imran Kazmi test test test test test tes tets tegge tegg"
+            android:textSize="15dp"
+            android:layout_weight=".7"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_type"
+                android:text="Important"
+                android:layout_alignParentRight="true"
+                android:textStyle="bold"
+                android:layout_weight=".3"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/tv_subject"
+                android:layout_alignParentEnd="true"
+                android:textSize="17dp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_Description"
+            android:text="Detail:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_report_drawer"
+            android:layout_below="@+id/reletivelayout_top"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_description_display"
+            android:text="61101-2028549-5\n+923137562147\nRIO 7772"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_Description"
+            android:textSize="15dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

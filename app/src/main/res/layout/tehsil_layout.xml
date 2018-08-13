@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrounda"
+    android:layout_height="wrap_content">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_above="@+id/view"
+        android:overScrollMode="never"
+        android:background="@drawable/backgrounda">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/topToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imgview_backbtn"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|start"
+                    android:src="@drawable/image_back_btn"
+                    android:textColor="@color/color_report"
+                    android:visibility="gone" />
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/icon"
+                    android:textColor="@color/color_report" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="VOILATIONS"
+                    android:textColor="@color/white"
+                    android:textSize="26sp" />
+                <ImageView
+                    android:id="@+id/spinner_menu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal|end"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/menu_icon2">
+                </ImageView>
+            </android.support.v7.widget.Toolbar>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/topToolbar"
+                android:id="@+id/header_divider"
+                android:background="@color/white" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_divider"
+                android:id="@+id/parent_tehsil">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/one">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/t_imgone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_size"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:text="1"
+                        android:paddingRight="8dp"
+                        android:id="@+id/not_tone"
+                        android:paddingLeft="8dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_white_view"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgone"
+                        android:layout_alignRight="@id/t_imgone" />
+
+                    <TextView
+                        android:id="@+id/txt_tehsil1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Rawalpindi"
+                        android:textColor="@color/color_white_view" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/t_imgtwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_size"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/img" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:paddingRight="8dp"
+                        android:text="2"
+                        android:id="@+id/not_two"
+                        android:paddingLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_white_view"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgtwo"
+                        android:layout_alignRight="@id/t_imgtwo" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_tehsil2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Murree"
+                        android:textColor="@color/color_white_view" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/t_imgthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_size"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:paddingRight="8dp"
+                        android:text="3"
+                        android:visibility="gone"
+                        android:id="@+id/not_three"
+                        android:paddingLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_white_view"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgthree"
+                        android:layout_alignRight="@id/t_imgthree" />
+
+
+                    <TextView
+                        android:id="@+id/txt_tehsil3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Gujar Khan"
+                        android:textColor="@color/color_white_view" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/two"
+                android:layout_below="@+id/one">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/t_imgfour"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_size"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/img" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:paddingRight="8dp"
+                        android:text="4"
+                        android:id="@+id/not_four"
+                        android:paddingLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_white_view"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgfour"
+                        android:layout_alignRight="@id/t_imgfour" />
+
+
+                    <TextView
+                        android:id="@+id/txt_tehsil4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Gujar Khan"
+                        android:textColor="@color/color_white_view" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/t_imgfive"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_size"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/img" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:text="5"
+                        android:paddingRight="8dp"
+                        android:id="@+id/not_five"
+                        android:paddingLeft="8dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_white_view"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgfive"
+                        android:layout_alignRight="@id/t_imgfive" />
+
+                    <TextView
+                        android:id="@+id/txt_tehsil5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Gujar Khan"
+                        android:textColor="@color/color_white_view" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/t_imgsix"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/img_size"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/img" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:text="6"
+                        android:paddingRight="8dp"
+                        android:id="@+id/not_six"
+                        android:paddingLeft="8dp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_white_view"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgsix"
+                        android:layout_alignRight="@id/t_imgsix" />
+
+
+                    <TextView
+                        android:id="@+id/txt_tehsil6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:gravity="center_vertical"
+                        android:text="Gujar Khan"
+                        android:textColor="@color/color_white_view" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/two"
+                android:id="@+id/bottom"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/t_imgseven"
+                        android:layout_width="250dp"
+                        android:paddingTop="5dp"
+                        android:layout_height="@dimen/img_size"
+                        android:src="@drawable/img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_textview"
+                        android:text="6"
+                        android:paddingRight="8dp"
+                        android:id="@+id/not_ten"
+                        android:paddingLeft="8dp"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/color_white_view"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignEnd="@id/t_imgseven"
+                        android:layout_alignRight="@id/t_imgseven" />
+
+                    <TextView
+                        android:id="@+id/txt_tehsil10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Gujar Khan"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/color_white_view"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                  </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+                 </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ScrollView01"
+        android:background="@color/color_white_view"
+        android:layout_alignParentLeft="true">
+    </View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="@string/txt_footer"
+        android:textColor="#ffff"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+
+
+

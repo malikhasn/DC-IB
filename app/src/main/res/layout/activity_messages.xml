@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/backgroung_color"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgview_iblog"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|end"
+            android:paddingRight="5dp"
+            android:textColor="@color/color_report" />
+
+        <TextView
+            android:id="@+id/top_txtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="MESSAGES"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_white_view" />
+
+        <ImageView
+            android:id="@+id/imgview_backbtn"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:textColor="@color/color_report" />
+
+        <ImageView
+            android:id="@+id/img_backbtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|start"
+            android:src="@drawable/icon"
+            android:textColor="@color/color_report" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="1"
+        android:visibility="gone"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/topToolbar">
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:textOff=""
+            android:textOn=""
+            android:layout_width="0dp"
+            android:background="@drawable/pending_selected"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/switch_layout"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview_nomsg"
+        android:text="No Messages"
+        android:textSize="30dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+</RelativeLayout>
